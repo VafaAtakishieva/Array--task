@@ -4,8 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./src/css/style.css">
 </head>
 <body>
+
+<div class="task1">
+   <h2> // TASK 1 // Array'in methodlarından istifadə edərək [23, 45, 12, 56, 67, 34, 89, 14] bu array'i console'da "89, 67, 56, 45, 34, 23, 14, 12" bu formada yazdirmaq</h2>
+   <div class="task">
+    <p>let num =  [23, 45, 12, 56, 67, 34, 89, 14];</p>
+   <p>num.sort(function(a, b){return a- b});</p>
+    <p>console.log(num.reverse().toString());</p>
+   </div>
+</div>
+
+
+<div class="task2">
+  <h2>  // TASK 2 // ["cat", "lion", "dog", "elephant"] arrayin uzunlugu  3-den boyuk olan ilk elementini console'da yazdirmaq .</h2>
+
+  <p>let animal = ["cat","lion","dog","elephant"];</p>
+  <p>let animals = animal.find(element=>element.length>3);</p>
+  <p>console.log(animals);</p>
+
+</div>
+
+
+<div class="task3">
+<h2>// TASK 3 // [5, 29, -3, 42, -1] arraydaki ilk menfi elementi console yazdir.</h2>
+<p>let num3 = [5, 29, -3, 42, -1];</p>
+<p>let num4 = num3.find((element)=>element<0);</p>
+<p>console.log(num4);</p>
+</div>
+
+<div class="task4">
+    
+<h2>// TASK 4  //  [21, 24, 3, 67, 85, 60]  arraydaki son cüt ededi console yazdir.</h2>
+
+
+
+<p>let num1 = [21, 24, 3, 67, 85, 60];</p>
+<p>let num2 = num1.findLast((element) => element % 2 ===0);</p>
+<p>console.log(num2);</p>
+</div>
     
 
     <script src="./src/js/app.js"></script>
